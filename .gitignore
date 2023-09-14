@@ -32,3 +32,6 @@ bin/
 
 ### Api Key ###
 /config/*.properties
+
+### Input Files ###
+/config/*.txt
