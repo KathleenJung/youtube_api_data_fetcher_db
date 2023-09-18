@@ -2,9 +2,10 @@
 
 YouTube 데이터 수집기는 YouTube에서 원하는 키워드를 검색하고 검색 결과를 추출하여 비디오 및 채널 정보를 가져오는 프로그램입니다.
 
-![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/8a49f9ec-e62c-4f3c-89cf-49441bd72c04)
-![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/9c4de766-9396-484a-8cda-5971d829c585)
-![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/f78643c8-8f6c-434c-b69a-2f1c5d3a85f8)
+![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/5f32f4ee-5c3c-4fed-888e-0837b6149024)
+![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/4761cc94-615f-49c0-97c7-0633353854d6)
+![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/b5d729dc-199d-447a-ae98-efa519f6dcf1)
+
 
 ## 개발 환경
 
@@ -27,8 +28,7 @@ dependencies {
 ```
 
 ## 폴더 구조
-
-![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/fbfda6e6-606b-4db3-bcb4-023f6b61fcc4)
+![image](https://github.com/KathleenJung/youtube_api_data_fetcher_db/assets/85939045/583609ff-6b37-4db9-bb34-36e9d1d12f1c)
 
 ## 사용 방법
 
