@@ -37,3 +37,9 @@ out/
 .vscode/
 
 .idea/
+
+### DB Info & API Keys ###
+src/main/resources/*.properties
+
+### Keyword ###
+src/main/resources/*.txt
