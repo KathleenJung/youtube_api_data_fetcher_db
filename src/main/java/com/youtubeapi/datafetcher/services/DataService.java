@@ -183,14 +183,6 @@ public class DataService {
         return video;
     }
 
-    public String getNextApiKey() {
-        if (currentApiKeyIndex < apiKeys.size()) {
-            return apiKeys.get(currentApiKeyIndex++);
-        } else {
-            throw new RuntimeException("더 이상 사용 가능한 API 키가 없습니다.");
-        }
-    }
-
     public List<String> readKeywordsFromFile(String filePath) {
         try {
             List<String> keywords = new ArrayList<>();
@@ -246,8 +238,12 @@ public class DataService {
                 return sb.toString();
             } else if (responseCode == 403) {
                 System.out.println("[Failed] API Key 일일 호출 횟수 초과 - Response Code : " + responseCode);
-                getNextApiKey();
-                return getConnection(type, param);
+                if (currentApiKeyIndex < apiKeys.size() - 1) {
+                    currentApiKeyIndex++;
+                    return getConnection(type, param);
+                } else {
+                    throw new RuntimeException("더 이상 사용 가능한 API 키가 없습니다.");
+                }
             } else {
                 conn.disconnect();
                 throw new RuntimeException("[Failed] 요청 실패 - Response Code : " + responseCode);
