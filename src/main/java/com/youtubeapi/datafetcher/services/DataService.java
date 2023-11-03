@@ -20,7 +20,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -121,6 +121,10 @@ public class DataService {
                 System.out.println(youtubeVideo);
                 System.out.println(youtubeChannelStat);
                 System.out.println(youtubeVideoStat);
+
+                youtubeChannelStat.setWDate(LocalDate.parse(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))));
+                youtubeVideoStat.setWDate(LocalDate.parse(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))));
+                youtubeVideo.setWDate(LocalDate.parse(LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))));
 
                 youtubeChannelStatRepository.save(youtubeChannelStat);
                 youtubeVideoRepository.save(youtubeVideo);

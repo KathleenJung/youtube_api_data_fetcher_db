@@ -4,6 +4,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 @Entity
 public class YoutubeVideoStat {
@@ -15,4 +17,6 @@ public class YoutubeVideoStat {
     private Long likeCount;
 
     private Long commentCount;
+
+    private LocalDate wDate;
 }

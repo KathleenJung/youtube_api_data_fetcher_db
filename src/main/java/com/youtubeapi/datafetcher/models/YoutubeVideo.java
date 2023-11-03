@@ -2,10 +2,9 @@ package com.youtubeapi.datafetcher.models;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -18,4 +17,5 @@ public class YoutubeVideo {
     private String channel;
     private String channelId;
     private String publishedAt;
+    private LocalDate wDate;
 }
